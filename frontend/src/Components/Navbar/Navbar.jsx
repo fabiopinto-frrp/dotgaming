@@ -1,13 +1,21 @@
 import { LogoImage } from "../Images/ImageElements";
 import logo from "../../Assets/logo.png";
-import { Nav, NavMenu, NavItem, NavLogo } from "./NavbarElements";
+import linktree from "../../Assets/linktree.png";
+import {
+  Nav,
+  NavMenu,
+  NavItem,
+  NavLogo,
+  LinktreeIcon,
+  LinktreeText,
+} from "./NavbarElements";
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLogo to="/">
-          <LogoImage src={logo} alt="Logo" />
+          <LogoImage src={logo} alt="Logo" draggable="false" />
         </NavLogo>
 
         <NavMenu>
@@ -20,7 +28,10 @@ const Navbar = () => {
           <NavItem to="/contactUs">CONTACTOS</NavItem>
         </NavMenu>
         <NavMenu>
-          <NavItem to="/login">Login</NavItem>
+          <NavLogo to="https://linktr.ee/dotgamingpt" target="_blank">
+            <LinktreeText>Linktree</LinktreeText>
+            <LinktreeIcon src={linktree} alt="Linktree" draggable="false" />
+          </NavLogo>
         </NavMenu>
       </Nav>
     </>

@@ -52,3 +52,15 @@ export const NavMenu = styled.ul`
   text-align: center;
   color: #fff;
 `;
+
+export const LinktreeIcon = styled.img`
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+`;
+
+export const LinktreeText = styled.p`
+  color: #fff;
+
+  margin-right: 1rem;
+`;
