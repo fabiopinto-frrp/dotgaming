@@ -29,6 +29,8 @@ export const HeroHeader = styled.h1`
   margin-bottom: 1rem;
   width: auto;
   height: auto;
+
+  }
 `;
 
 export const HeroSubHeader = styled.h2`
@@ -41,7 +43,7 @@ export const HeroSubHeader = styled.h2`
   font-family: "Roboto Mono", monospace;
   z-index: 1;
   margin: 0;
-  margin-left: -3rem;
+  margin-left: -8rem;
   margin-top: 1rem;
   width: auto;
   height: auto;

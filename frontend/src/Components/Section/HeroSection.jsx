@@ -19,7 +19,7 @@ const HeroSection = () => {
       <Hero>
         <BackgroundOpacity />
         <HeroImage src={HeroBackground} alt="Hero Image" draggable="false" />
-        <HeroHeader data-aos="zoom-in">WELCOME TO</HeroHeader>
+        <HeroHeader data-aos="zoom-in">BEM-VINDO À</HeroHeader>
         <HeroSubHeader
           data-aos="zoom-in"
           data-aos-offset="150"
