@@ -90,3 +90,42 @@ export const BackgroundOpacity = styled.div`
   position: absolute;
   z-index: 1;
 `;
+
+export const PrimarysectionContainer = styled.div`
+  background-color: #0c030c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  height: 40%;
+  width: 100%;
+`;
+
+export const PrimarySectionTitle = styled.h1`
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 1rem;
+`;
+
+export const PrimarySectionSubTitle = styled.h2`
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 1rem;
+`;
+
+export const PrimarySectionContent = styled.p`
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 1rem;
+`;
+
+export const PrimarySectionIcon = styled.img`
+  width: 7rem;
+  height: 7rem;
+`;

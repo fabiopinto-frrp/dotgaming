@@ -40,7 +40,7 @@ export const NavItem = styled(NavLink)`
     &:hover {
         color: #ff00ff;
     border-bottom: 3px solid #ff00ff;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 `;
 
 export const NavMenu = styled.ul`
