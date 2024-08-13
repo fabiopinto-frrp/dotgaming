@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Link, NavLink } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   height: 100px;
   display: flex;
   align-items: center;

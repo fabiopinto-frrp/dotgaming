@@ -1,9 +1,10 @@
 import {
-  PrimarysectionContainer,
+  PrimarySectionContainer,
   PrimarySectionContent,
   PrimarySectionSubTitle,
   PrimarySectionTitle,
   PrimarySectionIcon,
+  PrimarySectionSubContainer,
 } from "./SectionElements";
 
 import PropTypes from "prop-types";
@@ -11,16 +12,18 @@ import PropTypes from "prop-types";
 const PrimarySection = ({ items }) => {
   return (
     <>
-      <PrimarysectionContainer>
-        <PrimarySectionTitle></PrimarySectionTitle>
-        {items.map((item, index) => (
-          <div key={index} className="grid-item">
-            <PrimarySectionIcon src={item.icon}></PrimarySectionIcon>
-            <PrimarySectionSubTitle>{item.subTitle}</PrimarySectionSubTitle>
-            <PrimarySectionContent>{item.content}</PrimarySectionContent>
-          </div>
-        ))}
-      </PrimarysectionContainer>
+      <PrimarySectionContainer>
+        <PrimarySectionTitle>Serviços</PrimarySectionTitle>
+        <PrimarySectionSubContainer>
+          {items.map((item, index) => (
+            <div key={index} className="grid-item">
+              <PrimarySectionIcon src={item.icon}></PrimarySectionIcon>
+              <PrimarySectionSubTitle>{item.subTitle}</PrimarySectionSubTitle>
+              <PrimarySectionContent>{item.content}</PrimarySectionContent>
+            </div>
+          ))}
+        </PrimarySectionSubContainer>
+      </PrimarySectionContainer>
     </>
   );
 };

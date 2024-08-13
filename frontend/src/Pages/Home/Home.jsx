@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import HeroSection from "../../Components/Section/HeroSection";
 import PrimarySection from "../../Components/Section/PrimarySection";
 import testIcon from "../../Assets/favicon.png";
+import { HomeBody } from "./HomeElements";
 
 const Home = () => {
   const items = [
@@ -22,6 +23,16 @@ const Home = () => {
       subTitle: "Sub Title 3",
       content: "Content 3",
     },
+    {
+      icon: { testIcon },
+      subTitle: "Sub Title 4",
+      content: "Content 4",
+    },
+    {
+      icon: { testIcon },
+      subTitle: "Sub Title 5",
+      content: "Content 5",
+    },
   ];
 
   return (
@@ -31,9 +42,11 @@ const Home = () => {
           <title>DotGaming | Home</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
-      <HeroSection />
-      <PrimarySection items={items} />
+      <HomeBody>
+        <Navbar />
+        <HeroSection />
+        <PrimarySection items={items} />
+      </HomeBody>
     </>
   );
 };

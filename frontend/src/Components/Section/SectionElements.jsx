@@ -6,10 +6,11 @@ export const Hero = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: absolute;
+  position: relative;
   margin: 0;
+  margin-top: -100px;
   top: 0;
   left: 0;
   z-index: 0;
@@ -91,12 +92,12 @@ export const BackgroundOpacity = styled.div`
   z-index: 1;
 `;
 
-export const PrimarysectionContainer = styled.div`
-  background-color: #0c030c;
+export const PrimarySectionContainer = styled.div`
+  background-color: #1b0618;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
   height: 40%;
   width: 100%;
 `;
@@ -106,7 +107,22 @@ export const PrimarySectionTitle = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   font-family: "Roboto Mono", monospace;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+`;
+
+export const PrimarySectionSubContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+`;
+
+export const PrimarySectionIcon = styled.img`
+  width: 7rem;
+  height: 7rem;
 `;
 
 export const PrimarySectionSubTitle = styled.h2`
@@ -115,6 +131,7 @@ export const PrimarySectionSubTitle = styled.h2`
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 1rem;
+  margin-left: -1.2rem;
 `;
 
 export const PrimarySectionContent = styled.p`
@@ -123,9 +140,5 @@ export const PrimarySectionContent = styled.p`
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 1rem;
-`;
-
-export const PrimarySectionIcon = styled.img`
-  width: 7rem;
-  height: 7rem;
+  margin-left: -1.2rem;
 `;
