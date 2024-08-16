@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
   z-index: 1;
   position: relative;
   user-select: none;
