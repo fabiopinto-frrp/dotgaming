@@ -1,6 +1,6 @@
 import testIcon from "../Assets/favicon.png";
 
-const ServiceItems = [
+const EventItems = [
   {
     icon: { testIcon },
     subTitle: "Sub Title 1",
@@ -28,4 +28,4 @@ const ServiceItems = [
   },
 ];
 
-export default ServiceItems;
+export default EventItems;

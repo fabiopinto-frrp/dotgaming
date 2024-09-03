@@ -1,34 +1,34 @@
 import {
-  PrimarySectionContainer,
-  PrimarySectionContent,
-  PrimarySectionSubTitle,
-  PrimarySectionTitle,
-  PrimarySectionIcon,
-  PrimarySectionSubContainer,
+  SectionContainer,
+  SectionContent,
+  SectionSubTitle,
+  SectionTitle,
+  SectionIcon,
+  SectionSubContainer,
 } from "./SectionElements";
 
 import PropTypes from "prop-types";
 
-const PrimarySection = ({ items }) => {
+const PrimarySection = ({ ServiceItems }) => {
   return (
     <>
-      <PrimarySectionContainer>
-        <PrimarySectionTitle>Serviços</PrimarySectionTitle>
-        <PrimarySectionSubContainer>
-          {items.map((item, index) => (
+      <SectionContainer>
+        <SectionTitle>Serviços</SectionTitle>
+        <SectionSubContainer>
+          {ServiceItems.map((item, index) => (
             <div key={index} className="grid-item">
-              <PrimarySectionIcon src={item.icon}></PrimarySectionIcon>
-              <PrimarySectionSubTitle>{item.subTitle}</PrimarySectionSubTitle>
-              <PrimarySectionContent>{item.content}</PrimarySectionContent>
+              <SectionIcon src={item.icon}></SectionIcon>
+              <SectionSubTitle>{item.subTitle}</SectionSubTitle>
+              <SectionContent>{item.content}</SectionContent>
             </div>
           ))}
-        </PrimarySectionSubContainer>
-      </PrimarySectionContainer>
+        </SectionSubContainer>
+      </SectionContainer>
     </>
   );
 };
 PrimarySection.propTypes = {
-  items: PropTypes.arrayOf(
+  ServiceItems: PropTypes.arrayOf(
     PropTypes.shape({
       icon: PropTypes.string.isRequired,
       subTitle: PropTypes.string.isRequired,

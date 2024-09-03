@@ -92,7 +92,7 @@ export const BackgroundOpacity = styled.div`
   z-index: 1;
 `;
 
-export const PrimarySectionContainer = styled.div`
+export const SectionContainer = styled.div`
   background-color: #1b0618;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ export const PrimarySectionContainer = styled.div`
   width: 100%;
 `;
 
-export const PrimarySectionTitle = styled.h1`
+export const SectionTitle = styled.h1`
   color: #fff;
   font-size: 2.5rem;
   text-align: center;
@@ -110,7 +110,7 @@ export const PrimarySectionTitle = styled.h1`
   margin-bottom: 2rem;
 `;
 
-export const PrimarySectionSubContainer = styled.div`
+export const SectionSubContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10rem;
@@ -120,12 +120,12 @@ export const PrimarySectionSubContainer = styled.div`
   margin: 1rem;
 `;
 
-export const PrimarySectionIcon = styled.img`
+export const SectionIcon = styled.img`
   width: 7rem;
   height: 7rem;
 `;
 
-export const PrimarySectionSubTitle = styled.h2`
+export const SectionSubTitle = styled.h2`
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
@@ -134,7 +134,7 @@ export const PrimarySectionSubTitle = styled.h2`
   margin-left: -1.2rem;
 `;
 
-export const PrimarySectionContent = styled.p`
+export const SectionContent = styled.p`
   color: #fff;
   font-size: 1rem;
   text-align: center;
