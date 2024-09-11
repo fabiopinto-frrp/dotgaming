@@ -16,6 +16,7 @@ const SecondarySectionContainer = styled(SectionContainer)`
 
 const SecondarySectionItem = styled(SectionItem)`
   background-color: #1b0618;
+  height: 30rem;
 `;
 
 const SecondaryItemBg = styled(SectionItemBg)`

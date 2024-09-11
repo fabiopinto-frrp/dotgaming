@@ -99,7 +99,7 @@ export const SectionContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40%;
+  height: auto;
   width: 100%;
 `;
 
