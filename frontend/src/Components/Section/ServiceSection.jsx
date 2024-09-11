@@ -3,8 +3,9 @@ import {
   SectionContent,
   SectionSubTitle,
   SectionTitle,
-  SectionIcon,
   SectionSubContainer,
+  SectionItem,
+  SectionItemBg,
 } from "./SectionElements";
 
 import PropTypes from "prop-types";
@@ -17,9 +18,11 @@ const PrimarySection = ({ ServiceItems }) => {
         <SectionSubContainer>
           {ServiceItems.map((item, index) => (
             <div key={index} className="grid-item">
-              <SectionIcon src={item.icon}></SectionIcon>
-              <SectionSubTitle>{item.subTitle}</SectionSubTitle>
-              <SectionContent>{item.content}</SectionContent>
+              <SectionItem>
+                <SectionSubTitle>{item.subTitle}</SectionSubTitle>
+                <SectionContent>{item.content}</SectionContent>
+                <SectionItemBg className="section-item-bg" />
+              </SectionItem>
             </div>
           ))}
         </SectionSubContainer>
@@ -30,7 +33,6 @@ const PrimarySection = ({ ServiceItems }) => {
 PrimarySection.propTypes = {
   ServiceItems: PropTypes.arrayOf(
     PropTypes.shape({
-      icon: PropTypes.string.isRequired,
       subTitle: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
     })

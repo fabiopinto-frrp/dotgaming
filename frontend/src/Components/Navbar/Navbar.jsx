@@ -1,6 +1,7 @@
 import { LogoImage } from "../Images/ImageElements";
 import logo from "../../Assets/logo.png";
 import linktree from "../../Assets/linktree.png";
+import styled from "@emotion/styled";
 import {
   Nav,
   NavMenu,
@@ -10,13 +11,17 @@ import {
   LinktreeText,
 } from "./NavbarElements";
 
+const DotGamingLogo = styled(NavLogo)`
+  min-width: 175px;
+`;
+
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLogo to="/">
+        <DotGamingLogo to="/">
           <LogoImage src={logo} alt="Logo" draggable="false" />
-        </NavLogo>
+        </DotGamingLogo>
 
         <NavMenu>
           <NavItem to="/">INÍCIO</NavItem>

@@ -81,6 +81,7 @@ export const HeroIcon = styled.div`
   bottom: 1.5rem;
   left: 2rem;
   z-index: 1;
+
   width: 7rem;
 `;
 
@@ -113,32 +114,58 @@ export const SectionTitle = styled.h1`
 export const SectionSubContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10rem;
+  grid-gap: 8rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 auto;
 `;
 
-export const SectionIcon = styled.img`
-  width: 7rem;
-  height: 7rem;
+export const SectionItemBg = styled.div`
+  height: 128px;
+  width: 128px;
+  background-color: #ad2499;
+  position: relative;
+  top: -12rem;
+  right: -15rem;
+  z-index: 1;
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
+`;
+
+export const SectionItem = styled.div`
+  background-color: #0c030c;
+  margin: 1rem;
+  width: 18rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 28px;
+
+  &:hover .section-item-bg {
+    color: #fff;
+    transform: scale(10);
+  }
 `;
 
 export const SectionSubTitle = styled.h2`
   color: #fff;
+
   font-size: 1.5rem;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 1rem;
-  margin-left: -1.2rem;
+  z-index: 2;
+  position: relative;
 `;
 
 export const SectionContent = styled.p`
   color: #fff;
+
   font-size: 1rem;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 1rem;
-  margin-left: -1.2rem;
+  z-index: 2;
+  position: relative;
 `;

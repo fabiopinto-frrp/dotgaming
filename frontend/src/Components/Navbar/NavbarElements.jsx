@@ -22,7 +22,7 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   display: flex;
   align-items: center;
-  height: 60%;
+  height: 65%;
 `;
 
 export const NavItem = styled(NavLink)`

@@ -9,7 +9,12 @@ import { HeroImage, LogoImage } from "../Images/ImageElements";
 import HeroBackground from "../../Assets/Gaming.jpg";
 import Icon from "../../Assets/favicon.png";
 import AOS from "aos";
+import styled from "@emotion/styled";
 import "aos/dist/aos.css";
+
+const HeroLogoImage = styled(LogoImage)`
+  border-radius: 20px;
+`;
 
 const HeroSection = () => {
   AOS.init();
@@ -29,7 +34,7 @@ const HeroSection = () => {
           DOTGAMING
         </HeroSubHeader>
         <HeroIcon>
-          <LogoImage src={Icon} alt="HeroIcon" draggable="false" />
+          <HeroLogoImage src={Icon} alt="HeroIcon" draggable="false" />
         </HeroIcon>
       </Hero>
     </>
