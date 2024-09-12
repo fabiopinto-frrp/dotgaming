@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const NextEventModalCloseBG = styled.div`
+export const EventModalCloseBG = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
@@ -11,7 +11,7 @@ export const NextEventModalCloseBG = styled.div`
   position: fixed;
 `;
 
-export const NextEventModal = styled.div`
+export const EventModal = styled.div`
   background-color: #0c030c;
   width: 60%;
   height: 80%;

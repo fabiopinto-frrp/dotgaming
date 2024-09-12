@@ -50,7 +50,7 @@ nao ser possivel dar highlight aos butoes e aos items da navbar
     			equipa do grande bubu
     			estaticas a definir
 
-    	 portefolio single page:
+    	 portefolio single page (nesta seccao nas cards dos eventos vai ser clicavel para abrir um modal com mais informacao):
     			FILTRO POR TAGS {
     					MOSTRAR TUDO
     					EVENTOS, ATIVACOES, CORPORATIVOS, COMPETICOES, PRODUCOES

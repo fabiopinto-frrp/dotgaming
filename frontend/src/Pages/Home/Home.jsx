@@ -3,9 +3,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navbar from "../../Components/Navbar/Navbar";
 import HeroSection from "../../Components/Section/HeroSection";
 import ServiceSection from "../../Components/Section/ServiceSection";
-import EventSection from "../../Components/Section/EventSection";
+import NextEventSection from "../../Components/Section/NextEventSection";
 import ServiceItems from "../../SectionsData/ServicesData";
-import EventItems from "../../SectionsData/EventsData";
+
 import { HomeBody } from "./HomeElements";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         <Navbar />
         <HeroSection />
         <ServiceSection ServiceItems={ServiceItems} />
-        <EventSection EventItems={EventItems} />
+        <NextEventSection />
       </HomeBody>
     </>
   );

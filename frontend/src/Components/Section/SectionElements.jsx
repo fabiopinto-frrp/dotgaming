@@ -130,10 +130,8 @@ export const SectionItemBg = styled.div`
   right: -15rem;
   z-index: 1;
   border-radius: 50%;
-
   transition: all 0.5s ease;
 `;
-
 export const SectionItem = styled.div`
   background-color: #0c030c;
   margin: 1rem;
