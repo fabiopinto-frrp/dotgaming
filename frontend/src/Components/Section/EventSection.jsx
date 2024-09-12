@@ -20,7 +20,7 @@ const SecondarySectionItem = styled(SectionItem)`
 `;
 
 const SecondaryItemBg = styled(SectionItemBg)`
-  background-color: #f772e4;
+  background-color: #7825ac;
 `;
 
 const SecondarySection = ({ EventItems }) => {

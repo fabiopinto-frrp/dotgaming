@@ -14,7 +14,7 @@ nao ser possivel dar highlight aos butoes e aos items da navbar
 
     homePage:
     		 nabvar + logo + navItem que redireciona para o linktree
-    		 sem bolas, butao seta, para subir a pagina um titulo com uma simples              legenda e manter o fundo
+    		 sem bolas, butao seta, para subir a pagina um titulo com uma simples legenda e manter o fundo
 
     	 seccao dos servicos { (seccao dinamica com ficheiro json)
     			ORGANIZAÇÃO DE EVENTOS
@@ -33,7 +33,7 @@ nao ser possivel dar highlight aos butoes e aos items da navbar
 
     		UPCOMING EVENTS (em cards)
 
-    		secçao dos clientes (logo + redirect page)
+    		secçao dos clientes (logo + redirect page em carousel)
 
     		reviews dos clientes (cards)
 
@@ -43,7 +43,7 @@ nao ser possivel dar highlight aos butoes e aos items da navbar
 
     		EQUIPA GRANDIOSA DO BUBU DO ACO
 
-    		 footer (navegacao, email, numero de telemovel, se for necessario preencher espaco por um about us resumido e todas as redes)
+    		 footer (navegacao, email, numero de telemovel, por um about us resumido e todas as redes, para linguagem bandeira de portugal)
 
     	about us:
     			historia da empresa + redirect para portefolio
