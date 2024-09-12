@@ -141,7 +141,6 @@ export const SectionItem = styled.div`
   height: 10rem;
   overflow: hidden;
   border-radius: 28px;
-
   &:hover .section-item-bg {
     color: #fff;
     transform: scale(10);
@@ -150,7 +149,6 @@ export const SectionItem = styled.div`
 
 export const SectionSubTitle = styled.h2`
   color: #fff;
-
   font-size: 1.5rem;
   text-align: center;
   font-family: "Roboto Mono", monospace;
@@ -161,7 +159,6 @@ export const SectionSubTitle = styled.h2`
 
 export const SectionContent = styled.p`
   color: #fff;
-
   font-size: 1rem;
   text-align: center;
   font-family: "Roboto Mono", monospace;

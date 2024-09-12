@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+import styled from "@emotion/styled";
+import { useState } from "react";
 import {
   SectionContainer,
   SectionTitle,
@@ -7,8 +10,7 @@ import {
   SectionItem,
   SectionItemBg,
 } from "./SectionElements";
-import PropTypes from "prop-types";
-import styled from "@emotion/styled";
+import SectionModal from "../SectionModal/SectionModal";
 
 const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
@@ -24,11 +26,13 @@ const SecondaryItemBg = styled(SectionItemBg)`
 `;
 
 const SecondarySection = ({ EventItems }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   return (
     <>
       <SecondarySectionContainer>
         <SectionTitle>Próximos Eventos</SectionTitle>
-        <SectionSubContainer>
+        <SectionSubContainer onClick={() => setModalIsOpen(true)}>
           {EventItems.map((item, index) => (
             <div key={index} className="grid-item">
               <SecondarySectionItem>
@@ -39,6 +43,7 @@ const SecondarySection = ({ EventItems }) => {
             </div>
           ))}
         </SectionSubContainer>
+        {modalIsOpen && <SectionModal setModalIsOpen={setModalIsOpen} />}
       </SecondarySectionContainer>
     </>
   );
