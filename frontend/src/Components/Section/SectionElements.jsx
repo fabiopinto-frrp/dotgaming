@@ -101,6 +101,7 @@ export const SectionContainer = styled.div`
   align-items: center;
   height: auto;
   width: 100%;
+  user-select: none;
 `;
 
 export const SectionTitle = styled.h1`

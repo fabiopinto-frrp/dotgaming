@@ -11,10 +11,10 @@ export const NextEventSubContainer = styled.div`
 `;
 
 export const NextEventItem = styled.div`
-  background-color: #0c030c;
+  background-color: #1b0618;
   margin: 1rem;
   width: 18rem;
-  height: 10rem;
+  height: 30rem;
   overflow: hidden;
   border-radius: 28px;
   &:hover .section-item-bg {

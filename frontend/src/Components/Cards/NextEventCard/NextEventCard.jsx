@@ -13,8 +13,8 @@ const NextEventCard = ({ NextEventItems }) => {
         {NextEventItems.map((item, index) => (
           <div key={index} className="grid-item">
             <NextEventItem>
-              <NextEventItemSubTitle>{item.subTitle}</NextEventItemSubTitle>
-              <NextEventItemContent>{item.content}</NextEventItemContent>
+              <NextEventItemSubTitle>{item.title}</NextEventItemSubTitle>
+              <NextEventItemContent>{item.desc}</NextEventItemContent>
             </NextEventItem>
           </div>
         ))}
@@ -27,8 +27,9 @@ NextEventCard.propTypes = {
   NextEventItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
-      subTitle: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
+      serviceType: PropTypes.string.isRequired,
       logo: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
     })
