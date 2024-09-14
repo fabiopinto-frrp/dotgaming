@@ -31,7 +31,7 @@ USAR AS MESMAS CORES
 
     		estatisticas (dos eventos ou clientes)
 
-    		PORTEFOLIO SIMPLIFICADO (para levar para a pagina do portefolio)
+    		PORTEFOLIO SIMPLIFICADO (simples texto de apresentacao ao portfolio e um butao para levar para a pagina do portefolio)
 
     		EQUIPA GRANDIOSA DO BUBU DO ACO
 

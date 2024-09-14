@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 export const Hero = styled.div`
   background: #0c0c0c;
@@ -164,4 +165,32 @@ export const SectionContent = styled.p`
   margin-bottom: 1rem;
   z-index: 2;
   position: relative;
+`;
+
+export const LogoSubContainer = styled.div`
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+`;
+
+const slide = keyframes`
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
+export const LogosContainer = styled.div`
+  display: flex;
+  align-items: space-between;
+
+  animation: ${slide} 20s linear infinite;
+`;
+
+export const LogoItem = styled.img`
+  height: 100px;
+  margin: 0 2rem;
+  display: inline-block;
 `;
