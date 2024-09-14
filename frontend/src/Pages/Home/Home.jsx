@@ -7,6 +7,7 @@ import NextEventSection from "../../Components/Section/NextEventSection";
 import ServiceItems from "../../SectionsData/ServicesData";
 
 import { HomeBody } from "./HomeElements";
+import ScrollUpButton from "../../Components/Buttons/ScrollUpButton";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <HeroSection />
         <ServiceSection ServiceItems={ServiceItems} />
         <NextEventSection />
+        <ScrollUpButton />
       </HomeBody>
     </>
   );

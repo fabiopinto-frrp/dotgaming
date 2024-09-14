@@ -4,14 +4,6 @@ requesitos:
 PALETE DE CORES:
 USAR AS MESMAS CORES
 
-BUTOES NO GERAL :
-retangular on hover scale 0.1, background color da esquerda pa direita e na diagonal com overflow hidden
-
-nao ser possivel dar highlight aos butoes e aos items da navbar
-
-     imagens:
-    		nao podem dar para fazer highlight
-
     homePage:
     		 nabvar + logo + navItem que redireciona para o linktree
     		 sem bolas, butao seta, para subir a pagina um titulo com uma simples legenda e manter o fundo
