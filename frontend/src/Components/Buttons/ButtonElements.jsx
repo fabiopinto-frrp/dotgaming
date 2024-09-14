@@ -5,6 +5,7 @@ export const ScrollUpButtonContainer = styled.div`
   bottom: 20px;
   right: 20px;
   z-index: 100;
+  user-select: none;
 `;
 
 export const ScrollUpBtn = styled.button`
