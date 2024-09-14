@@ -4,6 +4,10 @@ import {
   NextEventItemContent,
   NextEventItemSubTitle,
   NextEventSubContainer,
+  NextEventItemImage,
+  NextEventItemTopOverlay,
+  NextEventItemBottomOverlay,
+  NextEventItemContentParagraph,
 } from "./NextEventCardElements";
 
 const NextEventCard = ({ NextEventItems }) => {
@@ -13,8 +17,21 @@ const NextEventCard = ({ NextEventItems }) => {
         {NextEventItems.map((item, index) => (
           <div key={index} className="grid-item">
             <NextEventItem>
+              <NextEventItemTopOverlay />
               <NextEventItemSubTitle>{item.title}</NextEventItemSubTitle>
-              <NextEventItemContent>{item.desc}</NextEventItemContent>
+              <NextEventItemImage src={item.image} alt={item.title} />
+              <NextEventItemBottomOverlay />
+              <NextEventItemContent>
+                <NextEventItemContentParagraph>
+                  {item.serviceType}
+                </NextEventItemContentParagraph>
+                <NextEventItemContentParagraph>
+                  {item.desc}
+                </NextEventItemContentParagraph>
+                <NextEventItemContentParagraph>
+                  {item.date}
+                </NextEventItemContentParagraph>
+              </NextEventItemContent>
             </NextEventItem>
           </div>
         ))}

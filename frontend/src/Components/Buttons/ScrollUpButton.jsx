@@ -8,13 +8,25 @@ const ScrollUpButton = () => {
     smoothscroll.polyfill();
   }, []);
 
+  const scrollToTop = () => {
+    if ("scrollBehavior" in document.documentElement.style) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      let scrollStep = -window.scrollY / (500 / 15),
+        scrollInterval = setInterval(() => {
+          if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+          } else clearInterval(scrollInterval);
+        }, 15);
+    }
+  };
+
   return (
     <>
       <ScrollUpButtonContainer>
         <ScrollUpBtn
-          className="scroll-up-button"
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            scrollToTop();
           }}
         >
           <FaArrowUp />
