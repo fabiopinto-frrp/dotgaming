@@ -185,6 +185,8 @@ const slide = keyframes`
 export const LogosContainer = styled.div`
   display: flex;
   align-items: space-between;
+  margin: 1rem;
+  margin-bottom: 3rem;
 
   animation: ${slide} 20s linear infinite;
 `;

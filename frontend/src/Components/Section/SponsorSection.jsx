@@ -11,7 +11,7 @@ const SponsorSection = ({ SponsorItems }) => {
   return (
     <>
       <SectionContainer>
-        <SectionTitle>Sponsors</SectionTitle>
+        <SectionTitle>Clientes</SectionTitle>
         <LogoSubContainer>
           <LogosContainer>
             {SponsorItems.map((logo, index) => (
