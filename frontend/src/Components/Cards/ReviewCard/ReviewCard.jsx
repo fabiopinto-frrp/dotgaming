@@ -8,35 +8,52 @@ import {
   ReviewCardDesc,
   ReviewCardHeader,
   ReviewCardTitle,
+  ReviewCardContainer,
 } from "./ReviewCardElements";
+import { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 
 const ReviewCard = ({ ReviewItems }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % ReviewItems.length);
+        setIsVisible(true);
+      }, 2000); // Match the duration of the fade-out animation
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [ReviewItems.length]);
+
+  const currentItem = ReviewItems[currentIndex];
+
   return (
-    <>
-      {ReviewItems.map((item, index) => (
-        <ReviewCardItem key={index}>
-          <ReviewCardDetails>
-            <ReviewCardHeader>
-              <ReviewCardAvatar src={item.avatar} alt="avatar" />
-              <ReviewCardTitle>
-                <ReviewCardName>{item.name}</ReviewCardName>
-                <ReviewCardCompanyName>
-                  {item.companyName}
-                </ReviewCardCompanyName>
-              </ReviewCardTitle>
-            </ReviewCardHeader>
-            <ReviewCardDesc>{item.desc}</ReviewCardDesc>
-            <ReviewCardField className="review-card-field">
-              {item.workField}
-            </ReviewCardField>
-          </ReviewCardDetails>
-        </ReviewCardItem>
-      ))}
-    </>
+    <ReviewCardContainer>
+      <ReviewCardItem className={isVisible ? "visible" : "hidden"}>
+        <ReviewCardDetails>
+          <ReviewCardHeader>
+            <ReviewCardAvatar src={currentItem.avatar} alt="avatar" />
+            <ReviewCardTitle>
+              <ReviewCardName>{currentItem.name}</ReviewCardName>
+              <ReviewCardCompanyName>
+                {currentItem.companyName}
+              </ReviewCardCompanyName>
+            </ReviewCardTitle>
+          </ReviewCardHeader>
+          <ReviewCardDesc>{currentItem.desc}</ReviewCardDesc>
+          <ReviewCardField className="review-card-field">
+            {currentItem.workField}
+          </ReviewCardField>
+        </ReviewCardDetails>
+      </ReviewCardItem>
+    </ReviewCardContainer>
   );
 };
+
 ReviewCard.propTypes = {
   ReviewItems: PropTypes.arrayOf(
     PropTypes.shape({
@@ -48,4 +65,5 @@ ReviewCard.propTypes = {
     })
   ).isRequired,
 };
+
 export default ReviewCard;

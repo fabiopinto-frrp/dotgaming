@@ -1,13 +1,31 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
 export const ReviewCardItem = styled.div`
   width: 20rem;
   height: 10rem;
   border-radius: 20px;
-  background: #f5f5f5;
   position: relative;
   padding: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   border: 3px solid #ac2599;
   transition: 0.2s ease-out;
   overflow: visible;
@@ -21,6 +39,22 @@ export const ReviewCardItem = styled.div`
     transform: translate(-50%, 50%);
     opacity: 1;
   }
+  &.visible {
+    animation: ${fadeIn} 2s forwards;
+  }
+
+  &.hidden {
+    animation: ${fadeOut} 2s forwards;
+  }
+`;
+
+export const ReviewCardContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ReviewCardDetails = styled.div`
@@ -48,6 +82,7 @@ export const ReviewCardAvatar = styled.img`
 export const ReviewCardTitle = styled.div`
   display: flex;
   flex-direction: column;
+  color: #fff;
 `;
 
 export const ReviewCardName = styled.h2`
@@ -65,6 +100,7 @@ export const ReviewCardCompanyName = styled.p`
 export const ReviewCardDesc = styled.p`
   font-size: 1rem;
   font-family: "Roboto Mono", monospace;
+  color: #fff;
   margin-left: 2rem;
 `;
 

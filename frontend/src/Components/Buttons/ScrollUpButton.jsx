@@ -2,6 +2,7 @@ import { FaArrowUp } from "react-icons/fa";
 import { ScrollUpBtn, ScrollUpButtonContainer } from "./ButtonElements";
 import smoothscroll from "smoothscroll-polyfill";
 import { useState, useEffect } from "react";
+import { css } from "@emotion/css";
 
 const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,11 @@ const ScrollUpButton = () => {
       <ScrollUpButtonContainer>
         {isVisible && (
           <ScrollUpBtn onClick={scrollToTop}>
-            <FaArrowUp />
+            <FaArrowUp
+              className={css`
+                transform: translateY(0.2rem);
+              `}
+            />
           </ScrollUpBtn>
         )}
       </ScrollUpButtonContainer>
