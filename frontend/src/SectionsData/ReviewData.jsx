@@ -21,12 +21,5 @@ const ReviewItems = [
     workField: "Data Scientist",
     desc: "Lorem ipsum dolor sit amet, ",
   },
-  {
-    avatar: fabolas,
-    name: "James Doe",
-    companyName: "Amazon",
-    workField: "Data Scientist",
-    desc: "Lorem ipsum dolor sit amet, ",
-  },
 ];
 export default ReviewItems;

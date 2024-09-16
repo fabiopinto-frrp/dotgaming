@@ -1,23 +1,4 @@
 import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
 
 export const ReviewCardItem = styled.div`
   width: 20rem;
@@ -26,26 +7,9 @@ export const ReviewCardItem = styled.div`
   position: relative;
   padding: 1.8rem;
   margin-bottom: 3rem;
-  border: 3px solid #ac2599;
   transition: 0.2s ease-out;
   overflow: visible;
   user-select: none;
-  &:hover {
-    border-color: #ff00ff;
-    box-shadow: 0 10px 20px -5px rgba(255, 0, 255, 0.6); /* Glow effect only at the bottom */
-  }
-
-  &:hover .review-card-field {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-  }
-  &.visible {
-    animation: ${fadeIn} 2s forwards;
-  }
-
-  &.hidden {
-    animation: ${fadeOut} 2s forwards;
-  }
 `;
 
 export const ReviewCardContainer = styled.div`
