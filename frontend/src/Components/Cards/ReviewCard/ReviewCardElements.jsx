@@ -39,8 +39,8 @@ export const ReviewCardHeader = styled.div`
 `;
 
 export const ReviewCardAvatar = styled.img`
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   margin-right: 1rem;
 `;
@@ -51,13 +51,13 @@ export const ReviewCardTitle = styled.div`
 `;
 
 export const ReviewCardName = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Roboto Mono", monospace;
   margin: 0;
 `;
 
 export const ReviewCardCompanyName = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Roboto Mono", monospace;
   margin: 0;
 `;
