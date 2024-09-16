@@ -180,8 +180,8 @@ export const LogosContainer = styled.div`
 `;
 
 export const LogoItem = styled.img`
-  height: 100px;
-  margin-left: 87.5rem;
+  height: 4.5rem;
+  margin-left: 7.8rem;
   user-select: none;
 `;
 

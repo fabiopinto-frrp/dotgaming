@@ -15,8 +15,8 @@ const SponsorSection = ({ SponsorItems }) => {
         max: 3000,
         min: 1024,
       },
-      items: 3,
-      partialVisibilityGutter: 40,
+      items: 4,
+      partialVisibilityGutter: 30,
     },
     mobile: {
       breakpoint: {
@@ -41,7 +41,6 @@ const SponsorSection = ({ SponsorItems }) => {
         <SectionTitle>Serviços</SectionTitle>
         <CarouselSpacing />
         <Carousel
-          responsive={responsive}
           additionalTransfrom={0}
           arrows
           autoPlay
@@ -60,13 +59,14 @@ const SponsorSection = ({ SponsorItems }) => {
           renderArrowsWhenDisabled={false}
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
+          responsive={responsive}
           rewind={false}
           rewindWithAnimation={false}
           rtl={false}
           shouldResetAutoplay
           showDots={false}
           sliderClass=""
-          slidesToSlide={1}
+          slidesToSlide={2}
           swipeable
         >
           {SponsorItems.map((item, index) => (
@@ -77,6 +77,7 @@ const SponsorSection = ({ SponsorItems }) => {
             />
           ))}
         </Carousel>
+        <CarouselSpacing />
         <CarouselSpacing />
       </CarouselContainer>
     </>
