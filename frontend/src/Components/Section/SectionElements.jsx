@@ -181,7 +181,7 @@ export const LogosContainer = styled.div`
 
 export const LogoItem = styled.img`
   height: 100px;
-  margin-left: 98rem;
+  margin-left: 87.5rem;
   user-select: none;
 `;
 
