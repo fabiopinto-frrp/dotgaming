@@ -10,6 +10,7 @@ import { HomeBody } from "./HomeElements";
 import ScrollUpButton from "../../Components/Buttons/ScrollUpButton";
 import SponsorSection from "../../Components/Section/SponsorSection";
 import ReviewSection from "../../Components/Section/ReviewSection";
+import StatisticSection from "../../Components/Section/StatisticSection";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <NextEventSection />
         <SponsorSection SponsorItems={SponsorItems} />
         <ReviewSection />
+        <StatisticSection />
         <ScrollUpButton />
       </HomeBody>
     </>
