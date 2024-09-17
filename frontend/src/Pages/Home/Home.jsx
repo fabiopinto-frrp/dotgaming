@@ -11,6 +11,7 @@ import ScrollUpButton from "../../Components/Buttons/ScrollUpButton";
 import SponsorSection from "../../Components/Section/SponsorSection";
 import ReviewSection from "../../Components/Section/ReviewSection";
 import StatisticSection from "../../Components/Section/StatisticSection";
+import PortfolioRedirectSection from "../../Components/Section/PortfolioRedirectSection";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <SponsorSection SponsorItems={SponsorItems} />
         <ReviewSection />
         <StatisticSection />
+        <PortfolioRedirectSection />
         <ScrollUpButton />
       </HomeBody>
     </>

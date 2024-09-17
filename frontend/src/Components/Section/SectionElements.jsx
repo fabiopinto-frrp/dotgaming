@@ -195,3 +195,13 @@ export const CarouselSpacing = styled.div`
   height: 3rem;
   background-color: #1b0618;
 `;
+
+export const SectionDescription = styled.p`
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 1rem;
+  z-index: 2;
+  position: relative;
+`;
