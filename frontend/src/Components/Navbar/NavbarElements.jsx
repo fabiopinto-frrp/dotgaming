@@ -4,12 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 export const Nav = styled.nav`
   background: rgba(0, 0, 0, 0.85);
   height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
   font-family: "Roboto Mono", monospace;
-  z-index: 1;
+  z-index: 15;
   position: fixed;
   user-select: none;
 `;
