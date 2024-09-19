@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
   font-family: "Roboto Mono", monospace;
   z-index: 1;
-  position: relative;
+  position: fixed;
   user-select: none;
 `;
 
