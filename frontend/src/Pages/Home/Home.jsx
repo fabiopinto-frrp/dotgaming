@@ -13,6 +13,7 @@ import ReviewSection from "../../Components/Section/ReviewSection";
 import StatisticSection from "../../Components/Section/StatisticSection";
 import PortfolioRedirectSection from "../../Components/Section/PortfolioRedirectSection";
 import TeamSection from "../../Components/Section/TeamSection";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         <StatisticSection />
         <PortfolioRedirectSection />
         <TeamSection />
+        <Footer />
         <ScrollUpButton />
       </HomeBody>
     </>
