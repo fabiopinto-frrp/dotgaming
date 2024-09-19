@@ -29,7 +29,8 @@ export const PortfolioRedirectButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 4rem;
+  margin-bottom: 5rem;
   z-index: 2;
 `;
 

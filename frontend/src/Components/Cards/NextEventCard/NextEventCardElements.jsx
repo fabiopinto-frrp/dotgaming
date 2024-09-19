@@ -19,9 +19,10 @@ export const NextEventItem = styled.div`
   border: 4px solid #ac2599;
   border-radius: 28px;
   position: relative;
-  &:hover .section-item-bg {
+  transition: all 0.2s ease-in-out;
+  &:hover {
     color: #fff;
-    transform: scale(10);
+    transform: scale(1.05);
   }
 `;
 
