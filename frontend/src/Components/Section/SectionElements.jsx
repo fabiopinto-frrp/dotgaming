@@ -7,7 +7,7 @@ export const Hero = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 100px);
   position: relative;
   margin: 0;
   margin-top: -100px;
