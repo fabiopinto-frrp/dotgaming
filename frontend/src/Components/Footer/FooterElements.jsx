@@ -74,5 +74,5 @@ export const FooterFlag = styled.img`
 `;
 
 export const FooterTextBold = styled(FooterText)`
-  font-weight: bold;
+  font-weight: 700;
 `;
