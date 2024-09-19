@@ -7,6 +7,7 @@ import {
   FooterContent,
   FooterFlagContainer,
   FooterFlag,
+  FooterTextBold,
 } from "./FooterElements";
 import styled from "@emotion/styled";
 import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
@@ -55,7 +56,7 @@ const Footer = () => {
           </FooterLeftContainer>
 
           <FooterMiddleContainer>
-            <FooterText>Contactos:</FooterText>
+            <FooterTextBold>Contactos:</FooterTextBold>
             <FooterText>
               <FooterContent>
                 <EmailIcon /> | geral@dotgaming.pt
