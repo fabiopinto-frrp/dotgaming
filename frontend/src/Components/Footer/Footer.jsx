@@ -58,10 +58,10 @@ const Footer = () => {
             <FooterText>Contactos:</FooterText>
             <FooterText>
               <FooterContent>
-                • <EmailIcon /> | geral@dotgaming.pt
+                <EmailIcon /> | geral@dotgaming.pt
               </FooterContent>
               <FooterContent>
-                • <PhoneIcon /> | (+351) 912259093
+                <PhoneIcon /> | (+351) 912259093
               </FooterContent>
               <FooterContent></FooterContent>
               <FooterContent></FooterContent>

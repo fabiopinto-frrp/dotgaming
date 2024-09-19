@@ -72,3 +72,7 @@ export const FooterFlag = styled.img`
   border-radius: 0.3rem;
   transition: all 0.2s ease-in-out;
 `;
+
+export const FooterTextBold = styled(FooterText)`
+  font-weight: bold;
+`;
