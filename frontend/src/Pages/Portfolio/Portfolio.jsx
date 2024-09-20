@@ -1,7 +1,8 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import PortfolioSection from "../../Components/Section/PortfolioSection";
+import { PortfolioBody } from "./PortfolioElements";
 
 const Portfolio = () => {
   return (
@@ -11,9 +12,11 @@ const Portfolio = () => {
           <title>DotGaming | Portfolio</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
-
-      <Footer />
+      <PortfolioBody>
+        <Navbar />
+        <PortfolioSection />
+        <Footer />
+      </PortfolioBody>
     </>
   );
 };
