@@ -1,6 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -11,6 +12,8 @@ const Contact = () => {
         </Helmet>
       </HelmetProvider>
       <Navbar />
+
+      <Footer />
     </>
   );
 };
