@@ -23,10 +23,11 @@ export const FooterLeftContainer = styled.div`
   margin: 2rem;
   margin-left: 4rem;
 `;
-export const FooterText = styled.p`
+export const FooterText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+  margin: 0.5rem;
 `;
 export const FooterLink = styled(Link)`
   text-decoration: none;
@@ -45,6 +46,7 @@ export const FooterContent = styled.p`
   margin-top: -0.5rem;
   color: #fff;
   font-size: 1rem;
+  user-select: text;
 `;
 
 export const FooterFlagContainer = styled.div`
@@ -73,6 +75,7 @@ export const FooterFlag = styled.img`
   transition: all 0.2s ease-in-out;
 `;
 
-export const FooterTextBold = styled(FooterText)`
+export const FooterTextBold = styled.p`
   font-weight: bold;
+  font-size: 1.2rem;
 `;
