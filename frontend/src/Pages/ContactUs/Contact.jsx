@@ -2,6 +2,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import ContactSection from "../../Components/Section/ContactSection";
+import { ContactBody } from "./ContactElements";
 
 const Contact = () => {
   return (
@@ -11,9 +13,11 @@ const Contact = () => {
           <title>DotGaming | Contact Us</title>
         </Helmet>
       </HelmetProvider>
-      <Navbar />
-
-      <Footer />
+      <ContactBody>
+        <Navbar />
+        <ContactSection />
+        <Footer />
+      </ContactBody>
     </>
   );
 };
