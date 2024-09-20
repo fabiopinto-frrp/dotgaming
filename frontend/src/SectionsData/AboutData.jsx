@@ -1,9 +1,9 @@
 import Image from "../Assets/Gaming.jpg";
 const AboutItems = [
   {
-    title: "Our Mission",
+    title: "Nossa Missão",
     description:
-      "Our mission is to provide the best gaming experience for our customers. We strive to provide the best customer service and the best gaming experience for our customers. We are always looking for ways to improve our services and make our customers happy.",
+      "Nossa missão é fornecer a melhor experiência de jogo para os nossos clientes. Nós oferecemos melhor atendimento e a melhor experiência de jogo para nossos clientes.",
     image: Image,
   },
 ];
