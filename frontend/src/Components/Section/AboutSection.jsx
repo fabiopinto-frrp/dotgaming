@@ -16,7 +16,8 @@ const SecondarySectionContainer = styled(SectionContainer)`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
 `;
 
 const AboutSection = ({ AboutItems }) => {

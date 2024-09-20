@@ -210,7 +210,7 @@ export const SectionImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 28px;
+
   transition: all 0.5s ease;
 `;
 
@@ -229,4 +229,5 @@ export const SectionDescriptionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100%;
+  margin-right: 2rem;
 `;
