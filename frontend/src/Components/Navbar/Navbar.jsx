@@ -19,10 +19,8 @@ import {
 } from "./NavbarElements";
 
 const DotGamingLogo = styled(NavLogo)`
-  min-width: 175px;
-  @media (max-width: 768px) {
-    min-width: 125px;
-  }
+  min-width: 0px;
+  min-height: 0px;
 `;
 
 const Navbar = () => {
@@ -57,7 +55,7 @@ const Navbar = () => {
         </NavMenu>
 
         <HamburgerMenu onClick={toggleMenu}>
-          <RxHamburgerMenu size={48} />
+          <RxHamburgerMenu size={24} />
         </HamburgerMenu>
       </Nav>
       {isOpen && (

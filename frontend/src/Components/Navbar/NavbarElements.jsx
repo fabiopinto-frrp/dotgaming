@@ -165,6 +165,7 @@ export const MobileNavMenu = styled.aside`
   position: fixed;
   height: 38%;
   width: 20%;
+  right: 0;
   top: 100px;
   z-index: 999;
   box-sizing: border-box;
