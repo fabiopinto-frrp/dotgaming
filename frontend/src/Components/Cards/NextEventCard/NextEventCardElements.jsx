@@ -8,6 +8,12 @@ export const NextEventSubContainer = styled.div`
   align-items: center;
   padding: 1rem;
   margin: 0 auto;
+  @media screen and (max-width: 1354px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const NextEventItem = styled.div`

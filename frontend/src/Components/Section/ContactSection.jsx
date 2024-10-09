@@ -5,6 +5,7 @@ import {
   SectionContainer,
 } from "./SectionElements";
 import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
+
 import styled from "@emotion/styled";
 
 const SecondarySectionContainer = styled(SectionContainer)`
@@ -13,6 +14,7 @@ const SecondarySectionContainer = styled(SectionContainer)`
   align-items: center;
   height: 50vh;
   padding-top: 14.5rem;
+  margin-bottom: 1rem;
 `;
 
 const PhoneIcon = styled(MdOutlinePhoneInTalk)`
@@ -20,11 +22,23 @@ const PhoneIcon = styled(MdOutlinePhoneInTalk)`
   font-size: 1.5rem;
   transform: translateY(0.45rem);
   margin-left: -1.1rem;
+  @media screen and (max-width: 503px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 503px) {
+    font-size: 1rem;
+  }
 `;
 const EmailIcon = styled(MdOutlineMailOutline)`
   color: #ff00ff;
   font-size: 1.5rem;
   transform: translateY(0.45rem);
+  @media screen and (max-width: 503px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 503px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const ContactDetails = styled(SectionDescription)`
@@ -41,6 +55,12 @@ const ContactContent = styled.p`
   color: #fff;
   font-size: 1rem;
   user-select: text;
+  @media screen and (max-width: 503px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 503px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const ContactSection = () => {

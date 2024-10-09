@@ -6,6 +6,9 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   user-select: none;
+  @media (max-width: 895px) {
+    display: none;
+  }
 `;
 export const FooterSubContainer = styled.div`
   display: flex;

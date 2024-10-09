@@ -38,7 +38,7 @@ const SponsorSection = ({ SponsorItems }) => {
   return (
     <>
       <CarouselContainer>
-        <SectionTitle>Serviços</SectionTitle>
+        <SectionTitle>Clientes</SectionTitle>
         <CarouselSpacing />
         <Carousel
           additionalTransfrom={0}

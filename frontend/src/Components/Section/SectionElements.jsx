@@ -31,6 +31,12 @@ export const HeroHeader = styled.h1`
   width: auto;
   height: auto;
 
+  @media screen and (max-width: 768px) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
   }
 `;
 
@@ -73,6 +79,12 @@ export const HeroSubHeader = styled.h2`
         width: 100%;
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 2.8rem;
   }
 `;
 
@@ -120,6 +132,13 @@ export const SectionSubContainer = styled.div`
   align-items: center;
   padding: 1rem;
   margin: 0 auto;
+
+  @media screen and (max-width: 1354px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const SectionItemBg = styled.div`

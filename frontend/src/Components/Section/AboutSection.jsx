@@ -20,6 +20,22 @@ const SecondarySectionContainer = styled(SectionContainer)`
   padding-bottom: 4rem;
 `;
 
+const SecondarySectionTitle = styled(SectionTitle)`
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+`;
+
+const SecondarySectionDescription = styled(SectionDescription)`
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
+    text-align: justify; /* Align text for better readability */
+    padding: 1rem; /* Add padding for better spacing */
+    margin: 0 auto; /* Center the text block */
+    line-height: 1.5;
+  }
+`;
+
 const AboutSection = ({ AboutItems }) => {
   return (
     <>
@@ -29,8 +45,10 @@ const AboutSection = ({ AboutItems }) => {
             <SectionImage src={item.image} alt="teamImage" />
           </SectionImageContainer>
           <SectionDescriptionContainer>
-            <SectionTitle>{item.title}</SectionTitle>
-            <SectionDescription>{item.description}</SectionDescription>
+            <SecondarySectionTitle>{item.title}</SecondarySectionTitle>
+            <SecondarySectionDescription>
+              {item.description}
+            </SecondarySectionDescription>
           </SectionDescriptionContainer>
         </SecondarySectionContainer>
       ))}

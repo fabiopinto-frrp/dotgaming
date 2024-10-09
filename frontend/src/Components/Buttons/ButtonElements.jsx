@@ -23,6 +23,9 @@ export const ScrollUpBtn = styled.button`
     color: #400e39;
     border: 2px solid #ac2599;
   }
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const PortfolioRedirectButtonContainer = styled.div`
