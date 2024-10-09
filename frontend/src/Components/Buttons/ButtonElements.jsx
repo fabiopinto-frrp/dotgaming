@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const ScrollUpButtonContainer = styled.div`
   position: fixed;
@@ -37,7 +37,7 @@ export const PortfolioRedirectButtonContainer = styled.div`
   z-index: 2;
 `;
 
-export const PortfolioRedirectBtn = styled(Link)`
+export const PortfolioRedirectBtn = styled(NavLink)`
   position: relative;
   background-color: #420d3b;
   color: #fff;

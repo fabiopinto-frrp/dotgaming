@@ -12,9 +12,7 @@ const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
   display: flex;
   align-items: center;
-  height: 50vh;
-  padding-top: 14.5rem;
-  margin-bottom: 1rem;
+  height: calc(100vh + 100px);
 `;
 
 const PhoneIcon = styled(MdOutlinePhoneInTalk)`

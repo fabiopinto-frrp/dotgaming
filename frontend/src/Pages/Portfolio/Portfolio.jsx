@@ -3,8 +3,12 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import PortfolioSection from "../../Components/Section/PortfolioSection";
 import { PortfolioBody } from "./PortfolioElements";
+import { useEffect } from "react";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HelmetProvider>

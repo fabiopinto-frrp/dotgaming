@@ -15,7 +15,7 @@ const SecondarySectionContainer = styled(SectionContainer)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh+100px);
   padding-top: 10rem;
   padding-bottom: 4rem;
 `;
@@ -29,9 +29,9 @@ const SecondarySectionTitle = styled(SectionTitle)`
 const SecondarySectionDescription = styled(SectionDescription)`
   @media screen and (max-width: 768px) {
     font-size: 1.3rem;
-    text-align: justify; /* Align text for better readability */
-    padding: 1rem; /* Add padding for better spacing */
-    margin: 0 auto; /* Center the text block */
+    text-align: justify;
+    padding: 1rem;
+    margin: 0 auto;
     line-height: 1.5;
   }
 `;

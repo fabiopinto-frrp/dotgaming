@@ -14,8 +14,12 @@ import StatisticSection from "../../Components/Section/StatisticSection";
 import PortfolioRedirectSection from "../../Components/Section/PortfolioRedirectSection";
 import TeamSection from "../../Components/Section/TeamSection";
 import Footer from "../../Components/Footer/Footer";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HelmetProvider>

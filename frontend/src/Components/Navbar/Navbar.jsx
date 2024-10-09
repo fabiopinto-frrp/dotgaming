@@ -20,6 +20,9 @@ import {
 
 const DotGamingLogo = styled(NavLogo)`
   min-width: 175px;
+  @media (max-width: 768px) {
+    min-width: 125px;
+  }
 `;
 
 const Navbar = () => {

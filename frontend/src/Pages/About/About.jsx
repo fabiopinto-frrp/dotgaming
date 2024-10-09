@@ -5,8 +5,12 @@ import Footer from "../../Components/Footer/Footer";
 import AboutSection from "../../Components/Section/AboutSection";
 import AboutItems from "../../SectionsData/AboutData";
 import { AboutBody } from "./AboutElements";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HelmetProvider>
