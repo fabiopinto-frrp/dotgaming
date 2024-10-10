@@ -5,6 +5,7 @@ export const FooterContainer = styled.footer`
   color: #fff;
   display: flex;
   justify-content: space-between;
+
   user-select: none;
   @media (max-width: 895px) {
     display: none;
@@ -57,8 +58,8 @@ export const FooterFlagContainer = styled.div`
   justify-content: center;
   background-color: #333333;
   align-items: center;
-  height: 10%;
-  width: 10%;
+  height: 20%;
+  width: 20%;
   padding: 1rem;
   border-radius: 0.5rem;
   margin: 2rem;
