@@ -15,6 +15,10 @@ const SecondarySectionContainer = styled(SectionContainer)`
   height: calc(100vh + 100px);
 `;
 
+const ContactDescriptionContainer = styled(SectionDescriptionContainer)`
+  margin-right: 0;
+`;
+
 const PhoneIcon = styled(MdOutlinePhoneInTalk)`
   color: #ff00ff;
   font-size: 1.5rem;
@@ -65,7 +69,7 @@ const ContactSection = () => {
   return (
     <>
       <SecondarySectionContainer>
-        <SectionDescriptionContainer>
+        <ContactDescriptionContainer>
           <SectionTitle>Contactos</SectionTitle>
           <ContactDetails>
             <ContactContent>
@@ -75,7 +79,7 @@ const ContactSection = () => {
               <EmailIcon /> | geral@dotgaming.pt
             </ContactContent>
           </ContactDetails>
-        </SectionDescriptionContainer>
+        </ContactDescriptionContainer>
       </SecondarySectionContainer>
     </>
   );

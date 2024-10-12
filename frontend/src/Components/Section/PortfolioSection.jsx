@@ -22,6 +22,7 @@ const SectionTitleContainer = styled(SectionDescriptionContainer)`
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-right: 0;
 `;
 
 const PortfolioSection = () => {
