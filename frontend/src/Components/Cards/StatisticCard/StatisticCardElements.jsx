@@ -8,7 +8,9 @@ import {
   ReviewCardTitle,
 } from "../ReviewCard/ReviewCardElements";
 
-export const StatisticCardItem = styled(ReviewCardItem)``;
+export const StatisticCardItem = styled(ReviewCardItem)`
+  padding: 0;
+`;
 
 export const StatisticCardDetails = styled(ReviewCardDetails)``;
 

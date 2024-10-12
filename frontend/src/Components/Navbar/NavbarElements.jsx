@@ -38,6 +38,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
   height: 65%;
   box-sizing: border-box;
+  margin-left: 4rem;
   @media (max-width: 768px) {
     height: 50%;
   }
@@ -76,7 +77,7 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 5rem;
+
   list-style: none;
   text-align: center;
   color: #fff;
@@ -143,14 +144,14 @@ export const HamburgerMenu = styled.button`
     height: 3rem;
   }
   @media (max-width: 480px) {
-    margin-left: 3rem;
-    margin-right: 0;
+    margin-left: -2rem;
+    margin-top: 1rem;
   }
 `;
 
 const slideIn = keyframes`
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0);
@@ -165,31 +166,31 @@ export const MobileNavMenu = styled.aside`
   position: fixed;
   height: 38%;
   width: 20%;
-  right: 0;
+  border-radius: 0 0 15px 0;
+  left: 0;
   top: 100px;
   z-index: 999;
   box-sizing: border-box;
-  animation: ${slideIn} 0.3s ease-out;
+  animation: ${slideIn} 0.3s ease-in-out;
 
   @media (min-width: 1354px) {
     display: none;
+  }
+  @media (max-width: 1353px) {
+    top: 100px;
+    width: 25%;
+    height: 35%;
   }
 
   @media (max-width: 768px) {
     top: 99px;
     width: 35%;
+    height: 30%;
   }
   @media (max-width: 480px) {
     top: 99px;
     width: 35%;
-  }
-  @media (max-width: 410px) {
     height: 45%;
-    max-width: 410px;
-  }
-  @media (max-width: 375px) {
-    height: 45%;
-    width: 375px;
   }
 `;
 
@@ -197,7 +198,7 @@ export const MobileNavItem = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin: 1rem 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-size: 1.2rem;
   user-select: none;
   padding: 0.2rem;
@@ -211,10 +212,10 @@ export const MobileNavItem = styled(Link)`
     color: #ff00ff;
     transform: scale(1.05);
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-
 `;
 export const Overlay = styled.div`
   position: fixed;

@@ -37,6 +37,10 @@ const Navbar = () => {
   return (
     <>
       <Nav>
+        <HamburgerMenu onClick={toggleMenu}>
+          <RxHamburgerMenu size={24} />
+        </HamburgerMenu>
+
         <DotGamingLogo to="/">
           <LogoImage src={logo} alt="Logo" draggable="false" />
         </DotGamingLogo>
@@ -53,10 +57,6 @@ const Navbar = () => {
             <LinktreeIcon src={linktree} alt="Linktree" draggable="false" />
           </NavLogo>
         </NavMenu>
-
-        <HamburgerMenu onClick={toggleMenu}>
-          <RxHamburgerMenu size={24} />
-        </HamburgerMenu>
       </Nav>
       {isOpen && (
         <>

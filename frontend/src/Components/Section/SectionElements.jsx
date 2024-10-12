@@ -83,9 +83,29 @@ export const HeroSubHeader = styled.h2`
   }
   @media screen and (max-width: 768px) {
     font-size: 4rem;
+    -webkit-text-stroke: 0.1rem #fff;
+    &:before {
+      -webkit-text-stroke: 0rem #fff;
+      border-right: 0.15rem solid #fff;
+    }
   }
+
   @media screen and (max-width: 480px) {
+    font-size: 3rem;
+    -webkit-text-stroke: 0.1rem #fff;
+    &:before {
+      -webkit-text-stroke: 0rem #fff;
+      border-right: 0.15rem solid #fff;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
     font-size: 2.8rem;
+    -webkit-text-stroke: 0.08rem #fff;
+    &:before {
+      -webkit-text-stroke: 0rem #fff;
+      border-right: 0.15rem solid #fff;
+    }
   }
 `;
 
