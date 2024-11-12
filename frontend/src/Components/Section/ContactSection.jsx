@@ -5,8 +5,9 @@ import {
   SectionContainer,
 } from "./SectionElements";
 import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md";
-
 import styled from "@emotion/styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
@@ -66,6 +67,7 @@ const ContactContent = styled.p`
 `;
 
 const ContactSection = () => {
+  AOS.init();
   return (
     <>
       <SecondarySectionContainer>

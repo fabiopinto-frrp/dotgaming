@@ -6,6 +6,8 @@ import {
 } from "./SectionElements";
 import EventCard from "../Cards/EventCard/EventCard";
 import EventItems from "../../SectionsData/EventData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
@@ -26,6 +28,7 @@ const SectionTitleContainer = styled(SectionDescriptionContainer)`
 `;
 
 const PortfolioSection = () => {
+  AOS.init();
   return (
     <>
       <SecondarySectionContainer>

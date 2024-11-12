@@ -5,12 +5,14 @@ import {
   SectionDescription,
 } from "./SectionElements";
 import styled from "@emotion/styled";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
 `;
 
 const PortfolioRedirectSection = () => {
+  AOS.init();
   return (
     <>
       <SecondarySectionContainer>

@@ -7,8 +7,11 @@ import {
   CarouselContainer,
   CarouselSpacing,
 } from "./SectionElements";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SponsorSection = ({ SponsorItems }) => {
+  AOS.init();
   const responsive = {
     desktop: {
       breakpoint: {

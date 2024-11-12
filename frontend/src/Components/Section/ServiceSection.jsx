@@ -7,10 +7,12 @@ import {
   SectionItem,
   SectionItemBg,
 } from "./SectionElements";
-
 import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PrimarySection = ({ ServiceItems }) => {
+  AOS.init();
   return (
     <>
       <SectionContainer>

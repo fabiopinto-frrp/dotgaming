@@ -7,6 +7,8 @@ import {
 } from "./SectionElements";
 import styled from "@emotion/styled";
 import ReviewItems from "../../SectionsData/ReviewData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SecondarySectionContainer = styled(SectionContainer)`
   background-color: #0c030c;
@@ -21,6 +23,7 @@ const ContainerSpacing = styled(CarouselSpacing)`
 `;
 
 const ReviewSection = () => {
+  AOS.init();
   return (
     <>
       <SecondarySectionContainer>

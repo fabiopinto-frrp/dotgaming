@@ -5,7 +5,6 @@ export const FooterContainer = styled.footer`
   color: #fff;
   display: flex;
   justify-content: space-between;
-
   user-select: none;
   @media (max-width: 895px) {
     display: none;
