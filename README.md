@@ -1,4 +1,4 @@
-# dotgaming (Freelance project for a client)
+# dotgaming
 
 requesitos:
 PALETE DE CORES:
